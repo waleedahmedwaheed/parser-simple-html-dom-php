@@ -28,7 +28,7 @@ This repository contains a PHP library for parsing HTML documents. It provides a
 ### Basic Example
 
     ```bash
-    <?php
+     
 		include('simple_html_dom.php');
 
 		// Create a DOM object
@@ -45,6 +45,6 @@ This repository contains a PHP library for parsing HTML documents. It provides a
 
 		// Save the HTML content to a file
 		$html->save('output.html');
-	?>
+	 
     ```
  
