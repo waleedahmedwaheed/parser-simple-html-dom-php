@@ -29,22 +29,22 @@ This repository contains a PHP library for parsing HTML documents. It provides a
 
      
      
-		include('simple_html_dom.php');
+    include('simple_html_dom.php');
 
-		// Create a DOM object
-		$html = file_get_html('http://example.com');
+    // Create a DOM object
+    $html = file_get_html('http://example.com');
 
-		// Find all images
-		foreach($html->find('img') as $element) {
-			echo $element->src . '<br>';
-		}
+    // Find all images
+    foreach($html->find('img') as $element) {
+	echo $element->src . '<br>';
+    }
 
-		// Find an element by ID
-		$element = $html->find('div#specific-id', 0);
-		echo $element->innertext;
+    // Find an element by ID
+    $element = $html->find('div#specific-id', 0);
+    echo $element->innertext;
 
-		// Save the HTML content to a file
-		$html->save('output.html');
-	 
+    // Save the HTML content to a file
+    $html->save('output.html');
+ 
      
  
